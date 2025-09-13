@@ -183,7 +183,7 @@
     // Background particles
     function createParticles(){const container=document.getElementById('particles');for(let i=0;i<50;i++){const p=document.createElement('div');p.className='particle';p.style.left=Math.random()*100+'%';p.style.top=Math.random()*100+'%';p.style.animationDelay=Math.random()*6+'s';p.style.animationDuration=(Math.random()*3+3)+'s';container.appendChild(p);}}
     // Screenshots
-    function openScreenshot(type){const map={ 'docker-up':'./docs/docker-up.png','wordpress-setup':'./docs/wordpress-setup.png','volumes':'./docs/screenshots/volumes.png'};document.getElementById('modalImage').src=map[type];document.getElementById('imageModal').style.display='block';}
+    function openScreenshot(type){const map={ 'docker-up':'./docs/docker-up.png','wordpress-setup':'./docs/wordpress-setup.png','volumes':'./docs/volumes.png'};document.getElementById('modalImage').src=map[type];document.getElementById('imageModal').style.display='block';}
     function closeModal(){document.getElementById('imageModal').style.display='none';}
     window.onclick=function(e){const modal=document.getElementById('imageModal');if(e.target===modal)closeModal();}
     document.addEventListener('DOMContentLoaded',createParticles);
